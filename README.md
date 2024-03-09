@@ -6,7 +6,7 @@ This is a simple web application for sharing code or text with dynamic real-time
 
 - Real-time updates: The platform dynamically saves and updates the shared content.
 - Copy to Clipboard: Easily copy the shared content to your clipboard with the click of a button.
-- Raw View: View the raw content with a dedicated "Raw" button.
+- Raw Text: View the raw content with a dedicated "Raw" button.
 
 ## Installation
 
@@ -47,7 +47,7 @@ Open the web application in your browser at [http://localhost:3000](http://local
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript (NodeJs)
 
 ## Author
 
