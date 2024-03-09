@@ -1,0 +1,16 @@
+{
+  "name": "Python-clone",
+  "version": "1.0.0",
+  "description": "Simple web application for sharing code or text with real-time updates",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js"
+  },
+  "keywords": ["text", "code", "sharing", "pastebin", "savetext", "copy", "paste"],
+  "author": "Mike Harrison",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5"
+  }
+}
