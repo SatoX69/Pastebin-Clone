@@ -52,6 +52,7 @@ Open the web application in your browser at [http://localhost:3000](http://local
 ## Author
 
 Mike Harrison
+
 **Inspired by SaveText and Pastebin and other creators who wrote similar code**
 
 ## License
