@@ -43,7 +43,7 @@ Open the web application in your browser at [http://localhost:3000](http://local
 3. Click the "Copy" button to copy the content to your clipboard.
 4. Click the "Raw" button to view the raw content.
 
-## Technologies Used
+## Languages Used
 
 - HTML
 - CSS
@@ -52,6 +52,7 @@ Open the web application in your browser at [http://localhost:3000](http://local
 ## Author
 
 Mike Harrison
+**Inspired by SaveText and Pastebin and other creators who wrote similar code**
 
 ## License
 
