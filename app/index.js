@@ -20,7 +20,7 @@ app.get("/save/:params*", async (req, res) => {
     endpoint = `/${endpoint}`;
 
     if (map.has(endpoint)) {
-      const data = fs.readFileSync("save.html", 'utf-8');
+      const data = fs.readFileSync("app/save.html", 'utf-8');
       const textData = map.get(endpoint);
       const HTML = `<!DOCTYPE html>
 <html lang="en">
@@ -125,7 +125,7 @@ app.get("/save/:params*", async (req, res) => {
 </html>`;
       return res.contentType('text/html').send(HTML);
     } else {
-      return res.send(fs.readFileSync("save.html", 'utf-8'));
+      return res.send(fs.readFileSync("app/save.html", 'utf-8'));
     }
   } catch (error) {
     console.error(error);
