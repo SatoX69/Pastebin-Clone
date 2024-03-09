@@ -30,16 +30,6 @@ app.get("/save/:params*", async (req, res) => {
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Share Text/Code</title>
   <meta name="description" content="A platform for sharing code or text with dynamic real-time updates">
-  <meta name="keywords" content="share, text, code, snippets, pastebin, savetext, text">
-  <meta name="author" content="Mike Harrison">
-  <meta property="og:title" content="Share Texts/Codes">
-  <meta property="og:description" content="A platform to share and save text or code snippets">
-  <meta property="og:image" content="https://github.com/SatoX69/Pastebin-Clone">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-  <meta name="twitter:description" content="A platform to share and save text or code snippets">
-  <meta name="twitter:image" content="https://github.com/SatoX69/Pastebin-Clone">
-
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -113,7 +103,7 @@ app.get("/save/:params*", async (req, res) => {
     textarea.addEventListener('input', (event) => { if (!event.target.value.length || event.target.value.length == 0) return; const data = { bool: true, text: event.target.value, uri: window.location.pathname };
       fetch('/save', { method: 'POST', headers: { 'Content-Type': 'application/json', }, body: JSON.stringify(data), }); });
 
-    function redirectToRaw() { window.location.href = \`/raw${window.location.pathname}\`; }
+    function redirectToRaw() { window.location.href = '/raw' + window.location.pathname; }
 
     function copyToClipboard() { const textArea = document.getElementById('text');
       textArea.select();
@@ -170,5 +160,5 @@ app.get("/save", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("Running on Port " + PORT)
-})
+  console.log("Running on Port " + PORT);
+});
