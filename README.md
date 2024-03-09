@@ -1,4 +1,4 @@
-# Text/Code Sharing Platform
+# Pastebin-Clone
 
 This is a simple web application for sharing code or text with dynamic real-time updates. Users can input their text or code snippets, save them, and share the link with others.
 
