@@ -159,6 +159,14 @@ app.get("/save", (req, res) => {
   return res.redirect(`/save/${generateRandomString()}`);
 });
 
+app.use((req, res, next) => {
+  if (req.method === 'GET' && req.path !== '/save' && req.path !== '/raw') {
+    res.redirect('/save');
+  } else {
+    next();
+  }
+});
+
 app.listen(PORT, () => {
   console.log("Running on Port " + PORT);
 });
